@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Outlet 1",
+        "on": {
+            "value": "5264691",
+            "delay": "183",
+            "length": "24"
+        },
+        "off": {
+            "value": "5264700",
+            "delay": "183",
+            "length": "24"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Outlet 2",
+        "on": {
+            "value": "5264835",
+            "delay": "183",
+            "length": "24"
+        },
+        "off": {
+            "value": "5264844",
+            "delay": "183",
+            "length": "24"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Outlet 3",
+        "on": {
+            "value": "5265155",
+            "delay": "183",
+            "length": "24"
+        },
+        "off": {
+            "value": "5265164",
+            "delay": "183",
+            "length": "24"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Outlet 4",
+        "on": {
+            "value": "5266691",
+            "delay": "183",
+            "length": "24"
+        },
+        "off": {
+            "value": "5266700",
+            "delay": "183",
+            "length": "24"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Outlet 5",
+        "on": {
+            "value": "5272835",
+            "delay": "183",
+            "length": "24"
+        },
+        "off": {
+            "value": "5272844",
+            "delay": "183",
+            "length": "24"
+        }
+    }
+]
