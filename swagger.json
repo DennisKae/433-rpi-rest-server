@@ -1,0 +1,47 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "433-rpi-rest-server",
+        "description": "RESTful webservice for 433Mhz power outlets, hosted on the raspberry pi",
+        "version": "1.0",
+        "contact": {
+            "name": "github repository",
+            "url": "https://github.com/DennisKae/433-rpi-rest-server"
+        }
+    },
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/emit/{value}/{length}/{delay}": {
+            "post": {
+                "x-swagger-router-controller": "emit",
+                "operationId": "index",
+                "tags": [
+                    "/emit/"
+                ],
+                "description": "Emits a 433Mhz signal",
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "path",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "length",
+                        "in": "path",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "delay",
+                        "in": "path",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ]
+            }
+        }
+    }
+}

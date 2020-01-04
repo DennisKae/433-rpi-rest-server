@@ -1,0 +1,37 @@
+{
+  "name": "433-rpi-rest-server",
+  "version": "1.0.0",
+  "description": "RESTful webservice for 433Mhz power outlets, hosted on a raspberry pi",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DennisKae/433-rpi-rest-server.git"
+  },
+  "keywords": [
+    "restful",
+    "rest",
+    "raspberry",
+    "pi",
+    "433",
+    "433mhz",
+    "power",
+    "outlet"
+  ],
+  "author": "DennisKa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DennisKae/433-rpi-rest-server/issues"
+  },
+  "homepage": "https://github.com/DennisKae/433-rpi-rest-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "rpi-433-v2": "^1.0.3",
+    "swagger-ui-express": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
