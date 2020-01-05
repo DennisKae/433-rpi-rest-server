@@ -35,7 +35,7 @@ app.get('/', (request, response) => {
     response.redirect('/api-docs');
 });
 
-app.post('/emit/:value/:length/:delay', (request, response) => {
+app.post('/emit/:value/:delay/:length', (request, response) => {
     const value = request.params.value;
     const delay = request.params.delay;
     const length = request.params.length;
@@ -49,7 +49,7 @@ app.post('/emit/:value/:length/:delay', (request, response) => {
     rfEmitter.sendCode(value, function (error, stdout) {
         console.log(stdout);
     });
-    const responseMessage = `Successfully emitted value/length/delay: ${value}/${length}/${delay}`;
+    const responseMessage = `Successfully emitted value/delay/length: ${value}/${delay}/${length}`;
     console.log("Response message: " + responseMessage);
     return response.send(responseMessage);
 });

@@ -29,13 +29,13 @@
                         "type": "integer"
                     },
                     {
-                        "name": "length",
+                        "name": "delay",
                         "in": "path",
                         "required": true,
                         "type": "integer"
                     },
                     {
-                        "name": "delay",
+                        "name": "length",
                         "in": "path",
                         "required": true,
                         "type": "integer"

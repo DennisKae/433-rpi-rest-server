@@ -10,6 +10,7 @@ Type=simple
 User=pi
 ExecStart=/usr/local/lib/node/bin/node /var/git/433-rpi-rest-server
 Restart=on-failure
+RestartSec=30
 
 [Install]
 WantedBy=multi-user.target
