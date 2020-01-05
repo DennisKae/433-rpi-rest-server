@@ -1,0 +1,15 @@
+[Unit]
+Description=RESTful webservice for 433Mhz power outlets
+Documentation=https://github.com/DennisKae/433-rpi-rest-server
+After=network.target
+
+[Service]
+Environment=PORT=4501
+Environment=EMITTER_PIN=7
+Type=simple
+User=pi
+ExecStart=/usr/local/lib/node/bin/node /var/git/433-rpi-rest-server
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -2,9 +2,9 @@
   "name": "433-rpi-rest-server",
   "version": "1.0.0",
   "description": "RESTful webservice for 433Mhz power outlets, hosted on a raspberry pi",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",

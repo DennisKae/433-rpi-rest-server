@@ -18,6 +18,7 @@ const express = require('express'),
 app.listen(port);
 console.log(`API Server started on port ${port}.`);
 console.log('API Docs are located at /api-docs and /swagger');
+console.log(`The emitting GPIO PIN is #${emitterPin} (environment variable EMITTER_PIN).`);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
 app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
@@ -30,6 +31,9 @@ app.use((request, response, next) => {
     next();
 });
 
+app.get('/', (request, response) => {
+    response.redirect('/api-docs');
+});
 
 app.post('/emit/:value/:length/:delay', (request, response) => {
     const value = request.params.value;
@@ -43,7 +47,6 @@ app.post('/emit/:value/:length/:delay', (request, response) => {
     });
 
     rfEmitter.sendCode(value, function (error, stdout) {
-        console.log(`Sending code ${value}...`);
         console.log(stdout);
     });
     const responseMessage = `Successfully emitted value/length/delay: ${value}/${length}/${delay}`;
