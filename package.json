@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/DennisKae/433-rpi-rest-server#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "rpi-433-v2": "^1.0.3",
     "swagger-ui-express": "^4.1.2"
   },
